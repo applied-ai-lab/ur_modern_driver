@@ -20,7 +20,7 @@
   <arg name="controllers" default="joint_state_controller force_torque_sensor_controller vel_based_pos_traj_controller"/>
   <arg name="stopped_controllers" default="pos_based_pos_traj_controller joint_group_vel_controller"/>
   <!-- robot model -->
-  <include file="$(find ur_description)/launch/ur10_upload.launch">
+  <include file="$(find ur_description)/launch/load_ur10.launch">
     <arg name="limited" value="$(arg limited)"/>
   </include>
 

@@ -66,7 +66,7 @@ private:
   {
     LOG_INFO("setPayload called");
     // TODO check min and max payload?
-    return (resp.success = commander_.setPayload(req.payload));
+    return (resp.success = commander_.setPayload(req.mass));
   }
 
 public:
